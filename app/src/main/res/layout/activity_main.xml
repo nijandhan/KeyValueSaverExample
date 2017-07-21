@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.nijandhanl.keyvaluesaverexample.MainActivity">
+
+    <EditText
+        android:id="@+id/et_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Key"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="52dp"
+        android:layout_marginLeft="8dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <EditText
+        android:id="@+id/et_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginTop="34dp"
+        android:ems="10"
+        android:hint="Value"
+        android:inputType="textPersonName"
+        android:text=""
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="@+id/et_key"
+        app:layout_constraintRight_toRightOf="@+id/et_key"
+        app:layout_constraintTop_toBottomOf="@+id/et_key" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="53dp"
+        android:onClick="onSaveClicked"
+        android:text="SAVE"
+        app:layout_constraintLeft_toLeftOf="@+id/et_value"
+        app:layout_constraintRight_toRightOf="@+id/et_value"
+        app:layout_constraintTop_toBottomOf="@+id/et_value" />
+
+    <Button
+        android:id="@+id/btn_retrieve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="45dp"
+        android:onClick="onRetrieve"
+        android:text="Retrieve"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="@+id/btn_save"
+        app:layout_constraintRight_toRightOf="@+id/btn_save"
+        app:layout_constraintTop_toBottomOf="@+id/btn_save" />
+
+</android.support.constraint.ConstraintLayout>
